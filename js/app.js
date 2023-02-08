@@ -41,9 +41,27 @@ function revertWord(parolaDaRevertare){
 
 
 //pari e dispari
+
+
 //utente inserisce un numero da 1 a 5
+let numbUser
+
+while( numbUser < 0 || numbUser > 6 || isNaN(numbUser) ){
+    numbUser = parseInt(prompt('Inserisci un numero da 1 a 5'));
+    console.log(numbUser);
+}
+
 // pc genera un numero random da 1 a 5
+let numbPc = Math.floor(Math.random() * 5) + 1;
+console.log(numbPc);
+
 //somma i numeri
+let sumNumbers = numbUser + numbPc;
+console.log(sumNumbers);
+
+//impostare resto 
+let resto = sumNumbers % 2;
+
 //se somma pari 
     //utente vince
 //altrimenti
