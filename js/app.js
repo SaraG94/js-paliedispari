@@ -1,30 +1,43 @@
-console.log('ciao');
-
 //palindromia
+
 //chiedere all'utente una parola
 let parolaInserita = prompt('Inserisci qui una parola per verificare se è palindroma.')
 console.log(parolaInserita)
 
-let parola =parolaInserita.toLocaleLowerCase()
+let parola =parolaInserita.toLocaleLowerCase()   //trasforma tutti i caratteri in minuscolo
 console.log(parola)
 
 //capire se la parola è palindroma
 
-//trasfromare parola in array
-let lettere = parola.charAt(i)
 
-//verifcare le lettere(ciclo)
-for(let i = 0; i < (parola.length)/2 ; i++){
-    //verificare se la prima lettera è uguale all'ultima
-    if([i] ===((parola.length) -1 -i) ){
-        console.log(i);
-        console.log(parola.length);
-        
-       console.log(true)
-    }
+//invertire le senso delle lettere della parola
+//creare una nuova variabile con la nuova parola specchiata
 
+let reverseWord = revertWord(parola);
+console.log(reverseWord);
+
+//confrontare le due stringhe
+
+if( parola === reverseWord){
+    alert('Parola Palindroma');
+}else{
+    alert('Parola NON Palindroma');
 }
-//comunicare all'utente se è palindroma o non lo è
+
+//funzione per creare una nuova parola specchiata
+function revertWord(parolaDaRevertare){
+
+    let reverseWord = '' ;
+
+    //impostare un ciclo che prende l'ultima lettera e la porta in i 0 e così via
+    for(let i = parolaDaRevertare.length -1 ; i >= 0; i--){
+
+        reverseWord += parolaDaRevertare[i];
+
+    }
+    return reverseWord;
+}
+
 
 
 //pari e dispari
