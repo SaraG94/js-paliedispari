@@ -2,6 +2,12 @@ console.log('ciao');
 
 //palindromia
 //chiedere all'utente una parola
+let parolaInserita = prompt('Inserisci qui una parola per verificare se è palindroma.')
+console.log(parolaInserita)
+
+let parola =parola.toLocaleLowerCase()
+console.log(parola)
+
 //capire se la parola è palindroma
   //scomporre la parola
   //verificare se la prima lettera è uguale all'ultima
