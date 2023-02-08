@@ -63,7 +63,13 @@ console.log(sumNumbers);
 let resto = sumNumbers % 2;
 
 //se somma pari 
-    //utente vince
-//altrimenti
-    //pc vince
-//comunicare risultati
+if(resto === 0){
+    //utente vince comunicare risultati
+    alert('Utente Vince!');
+}else{
+    //pc vince comunicare risultati
+    alert('Computer Vince!');
+}
+    
+
+   
