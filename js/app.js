@@ -5,13 +5,25 @@ console.log('ciao');
 let parolaInserita = prompt('Inserisci qui una parola per verificare se è palindroma.')
 console.log(parolaInserita)
 
-let parola =parola.toLocaleLowerCase()
+let parola =parolaInserita.toLocaleLowerCase()
 console.log(parola)
 
 //capire se la parola è palindroma
-  //scomporre la parola
-  //verificare se la prima lettera è uguale all'ultima
-  //verifcare le altre lettere(ciclo)
+
+//trasfromare parola in array
+let lettere = parola.charAt(i)
+
+//verifcare le lettere(ciclo)
+for(let i = 0; i < (parola.length)/2 ; i++){
+    //verificare se la prima lettera è uguale all'ultima
+    if([i] ===((parola.length) -1 -i) ){
+        console.log(i);
+        console.log(parola.length);
+        
+       console.log(true)
+    }
+
+}
 //comunicare all'utente se è palindroma o non lo è
 
 
