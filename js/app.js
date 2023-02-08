@@ -59,15 +59,26 @@ console.log(numbPc);
 let sumNumbers = numbUser + numbPc;
 console.log(sumNumbers);
 
-//impostare resto 
-let resto = sumNumbers % 2;
+function isEven (numb){
+    //impostare resto 
+    let resto = numb % 2;
 
-//se somma pari 
-if(resto === 0){
-    //utente vince comunicare risultati
+    //se somma pari 
+    if(resto === 0){
+        //utente vince 
+       return true;
+    }else{
+        //pc vince 
+       return false;
+    }
+}
+
+//comunicare risultati
+if(isEven (sumNumbers)){
+    
     alert('Utente Vince!');
 }else{
-    //pc vince comunicare risultati
+    
     alert('Computer Vince!');
 }
     
